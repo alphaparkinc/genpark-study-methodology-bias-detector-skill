@@ -1,0 +1,36 @@
+{
+  "name": "genpark-study-methodology-bias-detector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Scientific paper methodology auditor identifying selection bias, p-hacking risks, and sample size statistical power.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "elicit",
+    "methodology-audit",
+    "bias-detector",
+    "clinical-trials",
+    "scientific-rigor"
+  ],
+  "inputs": {
+    "study_id": {
+      "type": "string"
+    },
+    "study_design": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "bias_audit_id": {
+      "type": "string"
+    },
+    "methodology_robustness_grade": {
+      "type": "string"
+    },
+    "statistical_power_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
